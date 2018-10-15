@@ -3,6 +3,66 @@
 	color: white;
 	padding: 4px;
 }
+.top-menu a{
+	text-decoration: none;
+	color: white;
+	float: right;
+	font-size: 15px; 
+	margin: 3px;
+}
+.sidebar{
+	position: absolute;
+	height: auto;
+	width: 160px;
+	background-color: #2e2e1f;
+	overflow-x: hidden;
+}
+.sidebar ul{
+	list-style: none;
+	padding: 6px 8px 6px 16px;
+	display: block;
+	font-size: 1em;
+	margin: 50x;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #818181;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+.main-container{
+    margin-left: 160px;
+    padding: 10px 10px;
+}
+table{
+	font-family: Arial;
+	border-collapse: collapse;
+    width: 100%;
+}
+table th, table td{
+	border: 1px solid #ddd;
+    padding: 8px;
+}
+table tr:nth-child(odd){
+	background-color: #ddd;
+}
+table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+table tr:hover {
+	background-color: #ddd;
+}
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2e2e1f;
+    color: white;
+}
+.loggedinbody{
+	background-image: url('../images/logedbg.jpg');
+}
 .body{
  	background-image: url('../images/loginbg.jpg');
 }
@@ -47,6 +107,85 @@ button a{
 	text-decoration: none;
 	color: white;
 }
+.actionbtn{
+	width: 40%;
+	margin: 2px;
+}
+.del{
+	background-color: red;
+}
+.popbtn{
+	width: 30%;
+	margin: 4px;
+	padding: 5px;
+}
+.popup {
+	width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.popup .popup-content {
+    visibility: hidden;
+    width: 50%;
+    background-color: #818181;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -80px;
+}
+.popup .popup-actionbtn {
+    visibility: hidden;
+    background-color: #818181;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    margin-left: -80px;
+    padding: 50px;
+}
+.popup .popup-notification {
+    visibility: hidden;
+    background-color: #818181;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    margin-left: -80px;
+    padding: 50px;
+    font-size: 15px;
+}
+.popup .popup-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #818181 transparent transparent transparent;
+}
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 span.forgot {
     float: right;
 }
@@ -55,6 +194,7 @@ span.forgot a{
 	color: #336699;
 }
 .footer{
+	text-align: center;
 	background-color: black;
 	color: white;
 	padding: 4px;
