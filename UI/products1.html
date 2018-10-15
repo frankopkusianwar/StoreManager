@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/storemanager.css">
+	<script type="text/javascript" src="assets/js/create.js"></script>
+</head>
+<body>
+	<div class="loggedinbody">
+		<header>
+			<div class="header">
+				<h2>StoreManager
+					<span class="top-menu">
+						<a href="index.html">Logout</a>
+						<a href="profile.html">Profile</a>
+						<span onclick="notify()"><a href="#">Notifications(6)</a></span>
+						<div class="popup">
+				  			<span class="popup-notification" id="notification">
+				  				<p>Kodak ULtra Max out of stock</p><hr>
+				  				<p>KOdak Professional not sold this week</p><hr>
+				  				<h3>Kodak Gold Max out of stock</p><hr>
+				  				<h3>Kentmere 400 out of stock</p><hr>
+				  				<p>Restock 100 Tmax</p><hr>
+				  				<p>Kentmere 100 sales lower than Kentmere 400</p>
+				  			</span>
+			  			</div>
+					</span>
+				</h2>
+			</div>
+		</header>
+		<div class="sidebar">
+			<ul>
+				<li><a href="createstore.html">Store Attendants</a></li>
+				<li><a href="products1.html">Products</a></li>
+				<li><a href="sales1.html">Sales</a></li>
+			</ul>
+		</div>
+		<div class="main-container">
+			<table>
+				<tr>
+					<th>Product Name</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Action</th>
+				</tr>
+				<tr>
+					<td>Kodak ULtra</td>
+					<td>100</td>
+					<td>400,000 @</td>
+					<div class="popup">
+			  			<span class="popup-actionbtn" id="actndelete">
+			  				<h3>Are you sure you want to delete</h3>
+			  				<button class="popbtn">OK</button><button class="popbtn del">Cancel</button>
+			  			</span>
+			  		</div>
+			  		<div class="popup">
+			  			<span class="popup-actionbtn" id="mkadmin">
+			  				<h3>Quantity in inventory: 100</h3>
+			  				<h3>minimum inventory quantity: 10</h3>
+			  				<button class="popbtn">OK</button>
+			  			</span>
+			  		</div>
+					<td><button class="actionbtn" onclick="mkAdmin()">details</button><button class="actionbtn del" id="delete" onclick="del()">delete</button></td>
+				</tr>
+				<tr>
+					<td>Kodak Gold</td>
+					<td>30</td>
+					<td>300,000 @</td>
+					<td><button class="actionbtn" onclick="mkAdmin()">details</button><button class="actionbtn del" id="delete" onclick="del()">delete</button></td>
+				</tr>
+				<tr>
+					<td>Kentmere 400</td>
+					<td>5</td>
+					<td>100,000 @</td>
+					<td><button class="actionbtn" onclick="mkAdmin()">details</button><button class="actionbtn del" id="delete" onclick="del()">delete</button></td>
+				</tr>
+				<tr>
+					<td>100 Tmax</td>
+					<td>0</td>
+					<td>200,000 @</td>
+					<td><button class="actionbtn" onclick="mkAdmin()">details</button><button class="actionbtn del" id="delete" onclick="del()">delete</button></td>
+				</tr>
+				<tr>
+					<td>KOdak Pro</td>
+					<td>10</td>
+					<td>50,000 @</td>
+					<td><button class="actionbtn" onclick="mkAdmin()">details</button><button class="actionbtn del" id="delete" onclick="del()">delete</button></td>
+				</tr>
+				<tr>
+					<td>Kodak Gold</td>
+					<td>9</td>
+					<td>20,000 @</td>
+					<td><button class="actionbtn" onclick="mkAdmin()">details</button><button class="actionbtn del" id="delete" onclick="del()">delete</button></td>
+				</tr>
+			</table>
+			<div class="popup">
+	  			<span class="popup-content" id="createstre">
+	  				<h3>Enter product details</h3>
+	  				<form method="POST" action="" id="createstr">
+						<div class="form-container">
+							<input type="text" name="product" placeholder="Enter Product Name" id="input">
+							<input type="text" name="quantity" placeholder="Enter Quantity" id="input">
+							<input type="text" name="price" placeholder="Enter Price" id="input">
+							<button type="submit" name="submit" class="button"><a href="product1.html">Submit</a></button>
+						</div>
+					</form>
+	  			</span>
+	  			<button onclick="create()">Create Product</button>
+			</div>
+		</div>	
+		<footer>
+			<div class="footer">
+				<p>All rights reserved</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
