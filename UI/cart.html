@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Products</title>
+	<title>Cart</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/storemanager.css">
 	<script type="text/javascript" src="assets/js/create.js"></script>
 </head>
@@ -36,22 +36,19 @@
 			</ul>
 		</div>
 		<div class="main-container">
-			<form method="POST" action="" id="createstr">
-				<div class="form-container">
-					<input type="text" name="product" placeholder="Search Product Name" id="input">
-				</div>
-			</form>
 			<table>
 				<tr>
 					<th>Product Name</th>
 					<th>Quantity</th>
-					<th>Price</th>
+					<th>Unit Price</th>
+					<th>Sub Total</th>
 					<th>Action</th>
 				</tr>
 				<tr>
 					<td>Kodak ULtra</td>
-					<td>100</td>
+					<td>1</td>
 					<td>400,000 @</td>
+					<td>400,000</td>
 					<div class="popup">
 			  			<span class="popup-actionbtn" id="actndelete">
 			  				<h3>Are you sure you want to delete</h3>
@@ -60,44 +57,57 @@
 			  		</div>
 			  		<div class="popup">
 			  			<span class="popup-actionbtn" id="mkadmin">
-			  				<h3>Are you sure you want to add to cart</h3>
+			  				<h3>Are you sure you want to remove</h3>
 			  				<button class="popbtn">OK</button>
 			  				<button class="popbtn del">Cancel</button>
 			  			</span>
 			  		</div>
-					<td><button class="actionbtn" onclick="mkAdmin()">cart</button></td>
+					<td><button class="del" onclick="mkAdmin()">remove</button></td>
 				</tr>
 				<tr>
 					<td>Kodak Gold</td>
-					<td>30</td>
+					<td>2</td>
 					<td>300,000 @</td>
-					<td><button class="actionbtn" onclick="mkAdmin()">cart</button></td>
+					<td>600,000</td>
+					<td><button class="del" onclick="mkAdmin()">remove</button></td>
 				</tr>
 				<tr>
 					<td>Kentmere 400</td>
 					<td>5</td>
 					<td>100,000 @</td>
-					<td><button class="actionbtn" onclick="mkAdmin()">cart</button></td>
+					<td>500,000 </td>
+					<td><button class="del" onclick="mkAdmin()">remove</button></td>
 				</tr>
 				<tr>
 					<td>100 Tmax</td>
-					<td>0</td>
+					<td>2</td>
 					<td>200,000 @</td>
-					<td><button class="actionbtn" onclick="mkAdmin()">cart</button></td>
+					<td>400,000</td>
+					<td><button class="del" onclick="mkAdmin()">remove</button></td>
 				</tr>
 				<tr>
 					<td>KOdak Pro</td>
 					<td>10</td>
 					<td>50,000 @</td>
-					<td><button class="actionbtn" onclick="mkAdmin()">cart</button></td>
+					<td>500,000</td>
+					<td><button class="del" onclick="mkAdmin()">remove</button></td>
 				</tr>
 				<tr>
-					<td>Kodak Gold</td>
-					<td>9</td>
-					<td>20,000 @</td>
-					<td><button class="actionbtn" onclick="mkAdmin()">cart</button></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Total:</td>
+					<td>3,500,000</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><button class="actionbtn">Add</button></td>
 				</tr>
 			</table>
+
 			<div class="popup">
 	  			<span class="popup-content" id="createstre">
 	  				<h3>Enter sold product details</h3>
