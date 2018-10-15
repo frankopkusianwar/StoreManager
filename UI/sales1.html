@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/storemanager.css">
+	<script type="text/javascript" src="assets/js/create.js"></script>
+</head>
+<body>
+	<div class="loggedinbody">
+		<header>
+			<div class="header">
+				<h2>StoreManager
+					<span class="top-menu">
+						<a href="index.html">Logout</a>
+						<a href="profile.html">Profile</a>
+						<span onclick="notify()"><a href="#">Notifications(6)</a></span>
+						<div class="popup">
+				  			<span class="popup-notification" id="notification">
+				  				<p>Kodak ULtra Max out of stock</p><hr>
+				  				<p>KOdak Professional not sold this week</p><hr>
+				  				<h3>Kodak Gold Max out of stock</p><hr>
+				  				<h3>Kentmere 400 out of stock</p><hr>
+				  				<p>Restock 100 Tmax</p><hr>
+				  				<p>Kentmere 100 sales lower than Kentmere 400</p>
+				  			</span>
+			  			</div>
+					</span>
+				</h2>
+			</div>
+		</header>
+		<div class="sidebar">
+			<ul>
+				<li><a href="createstore.html">Store Attendants</a></li>
+				<li><a href="products1.html">Products</a></li>
+				<li><a href="sales1.html">Sales</a></li>
+			</ul>
+		</div>
+		<div class="main-container">
+			<form method="POST" action="" id="createstr">
+				<div class="form-container">
+					<input type="text" name="product" placeholder="Filter by attendant's name" id="input">
+				</div>
+			</form>
+			<table>
+				<tr>
+					<th>Product Name</th>
+					<th>Quantity</th>
+					<th>Unit Price</th>
+					<th>Sub Total</th>
+					<th>Sold by</th>
+				</tr>
+				<tr>
+					<td>Kodak ULtra</td>
+					<td>1</td>
+					<td>400,000 @</td>
+					<td>400,000</td>
+					<td>frank</td>
+					<div class="popup">
+			  			<span class="popup-actionbtn" id="actndelete">
+			  				<h3>Are you sure you want to delete</h3>
+			  				<button class="popbtn">OK</button><button class="popbtn del">Cancel</button>
+			  			</span>
+			  		</div>
+			  		<div class="popup">
+			  			<span class="popup-actionbtn" id="mkadmin">
+			  				<h3>Are you sure you want to remove</h3>
+			  				<button class="popbtn">OK</button>
+			  				<button class="popbtn del">Cancel</button>
+			  			</span>
+			  		</div>
+				</tr>
+				<tr>
+					<td>Kodak Gold</td>
+					<td>2</td>
+					<td>300,000 @</td>
+					<td>600,000</td>
+					<td>john doe</td>
+				</tr>
+				<tr>
+					<td>Kentmere 400</td>
+					<td>5</td>
+					<td>100,000 @</td>
+					<td>500,000 </td>
+					<td>jane doe</td>
+				</tr>
+				<tr>
+					<td>100 Tmax</td>
+					<td>2</td>
+					<td>200,000 @</td>
+					<td>400,000</td>
+					<td>eric baker</td>
+				</tr>
+				<tr>
+					<td>KOdak Pro</td>
+					<td>10</td>
+					<td>50,000 @</td>
+					<td>500,000</td>
+					<td>frank</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Total Sales:</td>
+					<td>3,500,000</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>	
+		<footer>
+			<div class="footer">
+				<p>All rights reserved</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
