@@ -3,7 +3,7 @@ from functions import Products
 
 app = Flask(__name__)
 
-@app.route('/storemanager/api/v1/products', methods=['POST'])
+@app.route('/storemanager/admin/api/v1/products', methods=['POST'])
 def postProduct():
     json_data = request.get_json(force=True)
     prod = Products()
