@@ -1,7 +1,17 @@
 from flask import Flask, jsonify, request, make_response, abort
+from functions import Products
 from functions import products
 
 app = Flask(__name__)
+
+@app.route('/storemanager/admin/api/v1/products', methods=['POST'])
+def postProduct():
+    json_data = request.get_json(force=True)
+    prod = Products()
+    prod.createProduct(json_data['productName'],
+                           json_data['quantity'], 
+                           json_data['price'])
+    return make_response(jsonify({'message': "product created"}), 201)
 
 @app.route('/storemanager/api/v1/products', methods=['GET'])
 def getProduct():
