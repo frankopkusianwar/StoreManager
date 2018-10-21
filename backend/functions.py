@@ -11,5 +11,5 @@ class Products(object):
         }
         products.append(productItem)
         return products
-    
 
+    
