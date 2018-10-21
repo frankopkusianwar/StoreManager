@@ -1,7 +1,5 @@
 from flask import Flask, jsonify, request, make_response, abort
-from functions import Products
-from functions import products
-
+from functions import Products, products, Sales, sales
 
 app = Flask(__name__)
 
@@ -26,6 +24,14 @@ def getSpecificProduct(productId):
     if len(products) == 0:
         abort(404)
     return make_response(jsonify({'product':prod[0]},200))
+
+@app.route('/storemanager/atendant/api/v1/sales', methods=['POST'])
+def post_sales_record():
+    json_data = request.get_json(force=True)
+    sal = Sales()
+    sal.createSales(atendant=json_data['atendant'], productName=json_data['productName'],
+                               quantity=json_data['quantity'], unitPrice=json_data['unitPrice'])
+    return make_response(jsonify({'message': 'Sales created successfully'}), 201)
 
 @app.errorhandler(404)
 def not_found(error):
