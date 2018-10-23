@@ -1,5 +1,5 @@
 .header{
-	background-color: #336699;
+	background-color: rgb(137, 166, 196);
 	color: white;
 	padding: 4px;
 }
@@ -14,7 +14,7 @@
 	position: absolute;
 	height: auto;
 	width: 160px;
-	background-color: #2e2e1f;
+	background-color:rgb(219, 211, 211);
 	overflow-x: hidden;
 }
 .sidebar ul{
@@ -22,7 +22,7 @@
 	padding: 6px 8px 6px 16px;
 	display: block;
 	font-size: 1em;
-	margin: 50x;
+	margin: 10px;
 }
 .sidebar a{
     text-decoration: none;
@@ -61,10 +61,20 @@ table th {
     color: white;
 }
 .loggedinbody{
-	background-image: url('../images/logedbg.jpg');
+	background-image: url('../images/loginbg.jpg');
 }
 .body{
  	background-image: url('../images/loginbg.jpg');
+}
+.prof-container{
+    text-align: center;
+    background-color: rgb(219, 211, 211);
+    margin: 1em;
+    padding: 10px;
+}
+.profdetails{
+    margin: 1em;
+    font-weight: bold;
 }
 .whole-form-container{
 	padding: 5% 0% 5% 25%;
@@ -80,7 +90,7 @@ img.avater{
 }
 form{
 	border: 1px;
-	background-color: #2e2e1f;
+	background-color: rgb(219, 211, 211);
 	color: white; 
 }
 .form-container{
@@ -95,7 +105,7 @@ form{
 	box-sizing: border-box;
 }
 button{
-	background-color: #336699;
+	background-color: rgb(137, 166, 196);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
