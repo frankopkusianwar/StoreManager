@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/<github username>/<repo name>.svg?branch=Develop)](https://travis-ci.org/<github username>/<repo name>)
-[![Coverage Status](https://coveralls.io/repos/github/<github username>/<repo name>/badge.svg?branch=Develop)](https://coveralls.io/github/<github username>/<repo name>?branch=Develop)
+
+[![Build Status](https://travis-ci.org/freeCodeCamp/how-to-contribute-to-open-source.svg?branch=Develop)](https://travis-ci.org/freeCodeCamp/how-to-contribute-to-open-source)
+[![Coverage Status](https://coveralls.io/repos/github/frankopkusianwar/StoreManager/badge.svg?branch=master)](https://coveralls.io/github/frankopkusianwar/StoreManager?branch=Develop)
 [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/<github username>/<repo name>)
 
 # StoreManager
