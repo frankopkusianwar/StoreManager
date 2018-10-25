@@ -1,15 +1,15 @@
 from flask import Flask, jsonify, request, make_response, abort
-from functions import Products, products, Sales, sales
+from models import createProduct, products, createSales, sales
 
 app = Flask(__name__)
 
 @app.route('/storemanager/admin/api/v1/products', methods=['POST'])
 def postProduct():
     json_data = request.get_json(force=True)
-    prod = Products()
-    prod.createProduct(json_data['productName'],
+    createProduct(json_data['productName'],
                            json_data['quantity'], 
                            json_data['price'])
+                           
     return make_response(jsonify({'message': "product created"}), 201)
 
 @app.route('/storemanager/api/v1/products', methods=['GET'])
@@ -28,8 +28,7 @@ def getSpecificProduct(productId):
 @app.route('/storemanager/atendant/api/v1/sales', methods=['POST'])
 def post_sales_record():
     json_data = request.get_json(force=True)
-    sal = Sales()
-    sal.createSales(atendant=json_data['atendant'], productName=json_data['productName'],
+    createSales(atendant=json_data['atendant'], productName=json_data['productName'],
                                quantity=json_data['quantity'], unitPrice=json_data['unitPrice'])
     return make_response(jsonify({'message': 'Sales created successfully'}), 201)
 
