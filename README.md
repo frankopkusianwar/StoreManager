@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/frankopkusianwar/SendIt.svg?branch=bg-changesinendpoints-161503334)](https://travis-ci.com/frankopkusianwar/SendIt)
+[![Build Status](https://travis-ci.com/frankopkusianwar/StoreManager.svg?branch=bg-changesinendpoints-161503334)](https://travis-ci.com/frankopkusianwar/StoreManager)
 
 [![Coverage Status](https://coveralls.io/repos/github/frankopkusianwar/StoreManager/badge.svg?branch=master)](https://coveralls.io/github/frankopkusianwar/StoreManager?branch=Develop)
 
