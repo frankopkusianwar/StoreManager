@@ -1,5 +1,4 @@
-
-[![Build Status](https://travis-ci.org/freeCodeCamp/how-to-contribute-to-open-source.svg?branch=Develop)](https://travis-ci.org/freeCodeCamp/how-to-contribute-to-open-source)
+[![Build Status](https://travis-ci.com/frankopkusianwar/SendIt.svg?branch=develop)](https://travis-ci.com/frankopkusianwar/SendIt)
 
 [![Coverage Status](https://coveralls.io/repos/github/frankopkusianwar/StoreManager/badge.svg?branch=master)](https://coveralls.io/github/frankopkusianwar/StoreManager?branch=Develop)
 
